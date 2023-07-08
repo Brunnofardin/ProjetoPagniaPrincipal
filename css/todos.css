@@ -5,9 +5,12 @@
     padding: 0px;
 }
 body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 header{
+    font-weight: bolder;
     height: 60px;
     color: white;
     padding: 10px;
@@ -24,7 +27,7 @@ header > nav{
 header > nav > section{
     display: flex;
     height: 40px;
-    width: 100px;
+    width: 120px;
     margin: 8px;
     text-align: center;
     align-items: center;
@@ -32,22 +35,5 @@ header > nav > section{
     justify-content: center;
 }
 nav#menupc{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    background-color: red;
-}
-nav#menupc > menu{
-    width: 70%;
-}
-nav#menupc > menu ul{
-    display: flex;
-}
-nav#menupc > menu ul li{
-    list-style: none;
-    
-}
-nav a{
-    color: white;
-    text-decoration: none;
+    display: none;
 }

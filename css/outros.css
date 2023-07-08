@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@media screen and (min-width:637px){
+    header > nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    section#s1{
+        display: none;
+    
+    }
+    nav#menupc{
+        text-shadow: 1px 1px 3px black;
+        padding: 8px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: red;
+    }
+    nav#menupc > menu{
+        margin-left: 30px;
+        width: 55%;
+    }
+    nav#menupc > menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav#menupc > menu ul li{
+        margin-left: 6px;
+        list-style: none;
+        
+    }
+    nav#menupc a{
+        color: white;
+        text-decoration: none;
+    }
+    nav#menupc a:hover{
+        color: aqua;
+        border-bottom: 3px solid aqua;
+    }
+    nav#menupc div#pesquisar{
+        width: 180px;
+        height: 27px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 6px;
+        position: relative;
+        background-color: black;
+    
+    }
+    nav#menupc div#pesquisar > input{
+        top: 50%;
+        left: 50%;
+        border: 0;
+        height: 90%;
+        width: 100%;
+        margin-top: .4px;
+        font-size: 1.2em;
+        border-radius: 6px;
+        position: absolute;
+        margin-bottom: 1.1px;
+        transform: translate(-50%,-50%);
+        background: white url(../img/lupa.png) no-repeat right;
+        background-size: contain;
+    }
+    
+    
+}
