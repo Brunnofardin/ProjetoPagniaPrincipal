@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+}
+header{
+    height: 60px;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    
+}
+header #burguer{
+    cursor: pointer;
+}
+header > nav{
+    display: flex;
+    justify-content: space-between;
+}
+header > nav > section{
+    display: flex;
+    height: 40px;
+    width: 100px;
+    margin: 8px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: center;
+}
+nav#menupc{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+nav#menupc > menu{
+    width: 70%;
+}
+nav#menupc > menu ul{
+    display: flex;
+}
+nav#menupc > menu ul li{
+    list-style: none;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
