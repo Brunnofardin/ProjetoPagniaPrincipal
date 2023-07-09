@@ -1,3 +1,4 @@
+const paineladmintrador = document.getElementById('paineladministrador')
 /* ABRINDO E FECHANDO MENU FLUTUANTE */
 
 const iconeBurguer = document.getElementById('burguer');
@@ -7,6 +8,7 @@ const voltarmenuhamburguer = document.getElementById('voltar');
 iconeBurguer.addEventListener('click',()=>{
     if(menuHamburguer.style.display == 'none'){
         menuHamburguer.style.display = 'flex'
+        paineladmintrador.style.display ='none'
     }else{
         menuHamburguer.style.display = 'none'
     }
@@ -27,8 +29,6 @@ window.onresize = ()=>{
 
 
 /* PAINEL ADMINISTRATIVO */
-
-const paineladmintrador = document.getElementById('paineladministrador')
 const btn_acessaradm = [...document.getElementsByClassName('Acessaradministração')];
 const btn_voltaradm = document.getElementById('voltaradm')
 
