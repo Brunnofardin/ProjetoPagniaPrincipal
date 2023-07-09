@@ -7,6 +7,7 @@
 body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 
 }
 header{
@@ -71,51 +72,20 @@ nav#menupc{
     color: white;
     text-decoration: none;
 }
-#menu{
+section#menu{
     width: 100%;
 }
-#menu a{
-    display: block;
+section#menu a{
     width: 100%;
     height: 100%;
-}
-#Painel{
-    cursor: pointer;
-    height: auto;
-    width: 90%;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-#Painel > div{
-    display:flex;
-    color: white;
-    height: 300px;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    flex-direction: column;
-}
-#Painel > div > span{
     display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid white;
 }
-#Painel > div > p{
-    top: 50%;
-    left: 50%;
-    font-size: 1.3em;
-    transform: translate(-50%,-50%);
-    position: absolute;
-
-}
-.voltar{
+section.voltar{
     width: 100%;
     display: block;
     text-align: right;
 }
-.btni_voltar{
+span.btni_voltar{
     padding: 20px;
     color: white;
     cursor: pointer;
@@ -123,9 +93,79 @@ nav#menupc{
     border: 2px solid white;
     background-color: orangered;
 }
-
 main{
     width: 100%;
     min-height: 100vh;
     background-color: white;
+}
+section#templates{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: pink;
+    
+}
+section#templates > div.product{
+    display:inline-block;
+    flex-direction: column;
+    height:330px;
+    min-width: 290px;
+    max-width: 330px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: blue;
+    overflow: hidden;
+    transition: transform 1s;
+    margin-top: 20px;
+}
+section#templates > div.product > section{
+    width: 100%;
+    border: 1px solid white;
+
+}
+section#templates >div.product > section.seção1{
+    height: 48%;
+
+}
+section#templates >div.product > section.seção1 > img{
+    height: 100%;
+    width: 100%;
+
+}
+section#templates >div.product > section.seção2{
+    height: 35%;
+    width: 100%;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-indent: 28px;
+    text-align: justify;
+    color: white;
+
+}
+section#templates >div.product > section.seção3{
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section#templates >div.product > section.seção3 > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+section#templates >div.product > section.seção3 > p > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+
 }

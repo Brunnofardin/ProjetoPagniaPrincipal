@@ -12,9 +12,6 @@
     header > nav > section{
         width: 160px;
     }
-    header > nav > #administrador{
-        display: flex;
-    }
     section#s1{
         display: none;
     
@@ -32,15 +29,19 @@
         background-color: red;
         border-bottom: 4px solid white;
     }
-    nav#menupc > menu{
-        margin-left: 30px;
-        width: 55%;
+    nav#menupc section#menupcS1{
+        width: 79%;
+        margin-right: 10px;
     }
-    nav#menupc > menu ul{
+    nav#menupc > section  menu{
+        margin-left: 30px;
+        width: 90%;
+    }
+    nav#menupc  > section  menu ul{
         display: flex;
         justify-content: space-between;
     }
-    nav#menupc > menu ul li{
+    nav#menupc > section  menu ul li{
         margin-left: 6px;
         list-style: none;
         
@@ -78,6 +79,16 @@
         transform: translate(-50%,-50%);
         background: white url(../img/lupa.png) no-repeat right;
         background-size: contain;
+    }
+    section#templates{
+        background-color: pink;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        
+    }
+    section#templates > div.product:hover{
+        transform: scale(1.07);
     }
     
     
