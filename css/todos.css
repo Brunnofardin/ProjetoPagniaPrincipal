@@ -34,13 +34,6 @@ header > nav > section{
     align-items: center;
     justify-content: center;
 }
-header > nav > #administrador{
-    display: none;
-}
-header > nav > #administrador > abbr > span{
-    cursor: pointer;
-
-}
 nav#menupc{
     display: none;
 }
@@ -59,7 +52,7 @@ nav#menupc{
     height: auto;
     
 }
-#menuFlutuante  ul {
+#menuFlutuante  ul{
     display: flex;
     flex-direction: column;
 
