@@ -66,6 +66,7 @@ const flutuante = [...document.getElementsByClassName('m-f')];
 const divmod = [...document.getElementsByClassName('divP')];
 const voltarflutuante = document.getElementById('voltar');
 const textoPadrao = document.getElementById('texto')
+const body = document.getElementsByTagName('body')[0]
 function CriarDIvs(qtd){
     for(c = 0 ; c<=qtd ; c++ ){
         const inputTxt = document.createElement('input')
@@ -104,7 +105,7 @@ elementosInputs.map((el,i)=>{
     }if(i==2){
         el.value =' Cor dos botões ex: aqua'
     }if(i==3){
-        el.value=' Estilo de fonte ex: arial'
+        el.value='  Fonte ex: 1.3em'
     }if(i==4){
         el.value=' Cor da borda ex: white'
     }if(i==5){
@@ -140,7 +141,7 @@ salvaralteracoes.addEventListener('click',()=>{
             }if(i==3){
                 
             }if(i==4){
-    
+        
             }if(i==5){
                 let texto = el.parentNode.previousSibling.firstChild.value
                 textoPadrao.innerText=texto
