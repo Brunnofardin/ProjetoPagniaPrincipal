@@ -180,20 +180,36 @@ section#selecionarIten{
 
 }
 #divmod{
+    display: flex;
     width: 90%;
     margin: auto;
     height: 40px;
     margin-top: 2px;
     text-align: center;
     border-radius: 10px;
+    align-items: center;
     background-color: orangered;
 }
-#divmod > input{
-    border: 0;
-    width: 90%;
-    height: 90%;
+#divmod > div#ipn-radio {
+    float: right;
+    margin: 4px;
+    width: 10%;
+
+}
+#divmod > div.ipn-txt{
+    float: left;
+    margin-left: 8px;
+    height: 100%;
+    width: 100%;
+
+}
+#divmod  .ipn-txt input{
+    font-size: .9em;
     margin-top: 2px;
     border-radius: 10px;
+    height: 90%;
+    width: 100%;
+    border: 0;
 }
 #salvar{
     display: flex;

@@ -58,53 +58,95 @@ btn_voltaradm.addEventListener('click',()=>{
 const select = document.getElementsByTagName('select')[0];
 const selecionar = document.getElementById('selecionar');
 const salvaralteracoes = document.getElementById('Salvar');
-selecionar.addEventListener("click",()=>{
-    const indice = select.selectedIndex
-    console.log(indice)
-    if(indice == 0){
-        AlterarLogo(' Link da imagem da logo')
-    }else if(indice == 1){
-            AlterarTitulo(' ex : BFinfromática')
-          
-    }else if(indice == 2){
-        AlterarTamanhoFonte(' ex: 16px') 
+const sectionEstilizar = document.getElementById("estlização")
 
-    }else if(indice == 3){
-        AlterarCorFundocabeçalho(' (Cor do cabeçalho) ex: black')
-    }else if(indice == 4){
-        AlterarCorFundocorpo(' (cor do corpo ) ex: white')
-    }else if(indice == 5){
-        AlterarCorMousehover(' ex : aqua')             
+
+const menu = document.getElementById('menupc');
+const flutuante = [...document.getElementsByClassName('m-f')];
+const divmod = [...document.getElementsByClassName('divP')];
+const voltarflutuante = document.getElementById('voltar');
+const textoPadrao = document.getElementById('texto')
+function CriarDIvs(qtd){
+    for(c = 0 ; c<=qtd ; c++ ){
+        const inputTxt = document.createElement('input')
+        inputTxt.setAttribute('type','text')
+        inputTxt.setAttribute('class','inputs')
+        const inputRadio = document.createElement('input')
+        inputRadio.setAttribute('type','radio')
+        inputRadio.setAttribute('class','radio')
+        const divPrincipal = document.createElement('div')
+        divPrincipal.setAttribute('id','divmod')
+        divPrincipal.setAttribute('class','divP')
+        const divsecundaria1 = document.createElement('div')
+        divsecundaria1.setAttribute('class','ipn-txt')
+        const divsecundaria2 = document.createElement('div')
+        divsecundaria2.setAttribute('id','ipn-radio')
+        
+        
+        divsecundaria1.appendChild(inputTxt)
+        divsecundaria2.appendChild(inputRadio)
+        divPrincipal.appendChild(divsecundaria1)
+        divPrincipal.appendChild(divsecundaria2)
+        sectionEstilizar.appendChild(divPrincipal)
+        
+    }
+    
+    
+}
+CriarDIvs(5)
+const elementosInputs = [...document.getElementsByClassName('inputs')]
+const elementosRadio = [...document.getElementsByClassName('radio')]
+elementosInputs.map((el,i)=>{
+    if(i==0){
+        el.value=' Cor Principal ex: white'
+    }if(i==1){
+        el.value=' Cor Secundaria ex: Black'
+    }if(i==2){
+        el.value =' Cor dos botões ex: aqua'
+    }if(i==3){
+        el.value=' Estilo de fonte ex: arial'
+    }if(i==4){
+        el.value=' Cor da borda ex: white'
+    }if(i==5){
+        el.value=' Texto  ex: BFinfromática'
     }
 
 })
-function CriarInput(texto){
-    const estilizacao = document.getElementById('estlização')
-    const div = document.createElement('div')
-    const input = document.createElement('input')
-    div.setAttribute('id','divmod')
-    input.setAttribute('class','inputs')
-    input.placeholder=texto
-    div.appendChild(input)
-    estilizacao.appendChild(div)
-}
-function AlterarLogo(texto){
-    CriarInput(texto)
-}
-function AlterarTitulo(texto){
-    CriarInput(texto)
-}
-function AlterarTamanhoFonte(texto){
-    CriarInput(texto) 
-}
-function AlterarCorFundocabeçalho(texto){
-    CriarInput(texto) 
-}
-function AlterarCorFundocorpo(texto){
-    CriarInput(texto)   
-}
-function AlterarCorMousehover(texto){
-    CriarInput(texto)  
-}
+
 salvaralteracoes.addEventListener('click',()=>{
+    elementosRadio.filter((el,i)=>{
+        if(el.checked){
+            if(i==0){
+                const cor = el.parentNode.previousSibling.firstChild.value
+
+                btn_voltaradm.style.background=cor
+                menu.style.background=cor
+                voltarflutuante.style.background=cor
+                flutuante.map((el,i)=>{
+                    el.style.background=cor
+                })
+
+                divmod.map((el)=>{
+                    el.style.background=cor
+
+                })
+
+        
+            }if(i==1){
+                let cor = el.parentNode.previousSibling.firstChild.value
+            
+            }if(i==2){
+            
+            }if(i==3){
+                
+            }if(i==4){
+    
+            }if(i==5){
+                let texto = el.parentNode.previousSibling.firstChild.value
+                textoPadrao.innerText=texto
+            
+            }
+        }
+    })
+
 })
