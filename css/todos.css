@@ -15,6 +15,7 @@ header{
     color: white;
     padding: 10px;
     background-color: black;
+    border-bottom: 4px solid white;
     
 }
 header #burguer{
@@ -36,4 +37,48 @@ header > nav > section{
 }
 nav#menupc{
     display: none;
+}
+#menuFlutuante{
+    display: flex;
+    width: 88%;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    background-color: darkblue;
+    justify-content: space-between;
+}
+#menuFlutuante section{
+    border: 1px solid white;
+    height: auto;
+    
+}
+#menuFlutuante  ul {
+    display: flex;
+    flex-direction: column;
+
+}
+#menuFlutuante li{
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: red;
+    border: 1px solid white;
+}
+#menuFlutuante a{
+    color: white;
+    text-decoration: none;
+}
+#btn-voltar{
+    text-align: right;
+}
+#voltar{
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: orangered;
 }
