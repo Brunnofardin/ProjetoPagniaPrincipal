@@ -1,9 +1,19 @@
 @charset "UTF-8";
 
 @media screen and (min-width:637px){
+    header{
+        font-size: 1.3em;
+        border-bottom: 4px solid white;
+    }
     header > nav{
         display: flex;
         justify-content: space-around;
+    }
+    header > nav > section{
+        width: 160px;
+    }
+    header > nav > #administrador{
+        display: flex;
     }
     section#s1{
         display: none;
@@ -38,6 +48,7 @@
     nav#menupc a{
         color: white;
         text-decoration: none;
+        transition: border .1s;
     }
     nav#menupc a:hover{
         color: aqua;

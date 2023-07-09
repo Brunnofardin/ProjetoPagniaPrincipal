@@ -15,6 +15,11 @@
             <section class="sectionheader" id="s1">
                 <span class="material-symbols-outlined" id="burguer">density_medium</span>
             </section class="sectionheader">
+            <section id="administrador">
+                <abbr title="Adminstração" class="Acessaradministração"> 
+                    <span class="material-symbols-outlined">apps</span>
+                </abbr>
+            </section>
             <section>
                <p>BF informática</p>
             </section>
@@ -24,7 +29,7 @@
         </nav>
     </header>
     <nav id="menuFlutuante">
-        <section>
+        <section id="menu">
             <menu id="menuparamobile">
                 <ul>
                     <li><a href="">HOME</a></li>
@@ -34,9 +39,16 @@
                 </ul>
             </menu>
         </section>
-        <section>
-            <div id="btn-voltar">
-                <span class="material-symbols-outlined" id="voltar">arrow_back_ios_new</span>
+        <section id="Painel">
+            <div class='Acessaradministração'>
+                <span class="material-symbols-outlined" id="btn-painel" >apps </span>
+                <p>Painel Administrativo</p>
+
+            </div>
+        </section>
+        <section id="btn-voltar" class="voltar">
+            <div id="span-voltar">
+                <span class="material-symbols-outlined btni_voltar" id="voltar" >arrow_back_ios_new</span>
 
             </div>
         </section>
@@ -54,5 +66,41 @@
             <input type="text" name="" id="">
         </div>
     </nav>
+    <main>
+        <div id="paineladministrador">
+            <section id="selecionarIten">
+                <select name="" id="">
+                    <optgroup label="Praticidade">
+                        <option value="">Logo</option>
+                        <option value="">Titulo Principal</option>
+                    </optgroup>
+                        <optgroup label="Estilização">
+                            <option value="">Tamanho da fonte</option>
+                            <option value="">Cor de fundo ( cabeçalho )</option>
+                            <option value="">Cor de fundo ( Corpo da página )</option>
+                            <option value="">Menu hover ( cor ao passar o mouse )</option>
+                        </optgroup>
+                </select>
+            </section>
+            <section id="estlização">
+
+            </section>
+            <section id="salvar">
+                <div>
+                    <input type="button" value="Salvar">
+                </div>
+
+            </section>
+            <section id="btn-voltar">
+                <div id="span-voltar" class="voltar">
+                    <span class="material-symbols-outlined btni_voltar" id="voltaradm">arrow_back_ios_new</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
