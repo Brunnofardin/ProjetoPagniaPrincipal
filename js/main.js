@@ -53,7 +53,7 @@ function CriarTemplate(n){
 
     }
 }
-CriarTemplate(3)
+CriarTemplate(6)
 function modificar(produto,seção,link,texto,imagem){
     const product = document.getElementsByClassName("product")
     if(seção == 1){
