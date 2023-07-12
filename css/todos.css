@@ -100,13 +100,13 @@ main{
 }
 section#templates{
     width: 90%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
 section#templates > div.product{
     display:inline-block;
-    flex-direction: column;
     height:330px;
     min-width: 290px;
     max-width: 330px;

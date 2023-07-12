@@ -19,6 +19,9 @@
     #menuFlutuante{
         display: none;
     }
+    main{
+        position: relative;
+    }
     nav#menupc{
         text-shadow: 1px 1px 3px black;
         padding: 8px;
@@ -81,11 +84,20 @@
         background-size: contain;
     }
     section#templates{
-        background-color: pink;
-        width: 100%;
-        text-align: center;
         margin: auto;
+        padding: 10px;
+        max-width:1000px;
+        display:block;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: pink;
+     
+       
         
+    }
+    section#templates > div.product{
+        display: inline-block;
     }
     section#templates > div.product:hover{
         transform: scale(1.07);
