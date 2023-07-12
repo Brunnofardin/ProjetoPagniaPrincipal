@@ -4,6 +4,14 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --cor1:#2563eb;
+    --cor2:#598EF3;
+    --cor3:#334155;
+    --cor4:#1e293b;
+    --cor5:#94a3b8;
+
+}
 body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +24,7 @@ header{
     height: 60px;
     color: white;
     padding: 10px;
-    background-color: black;
+    background:black;
     
 }
 header #burguer{
@@ -41,7 +49,7 @@ nav#menupc{
 #menuFlutuante{
     display: flex;
     width: 88%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     flex-direction: column;
     align-items: center;
@@ -101,6 +109,7 @@ main{
 section#templates{
     width: 90%;
     display: flex;
+    cursor: pointer;
     align-items: center;
     flex-direction: column;
     

@@ -22,6 +22,7 @@ window.onresize = ()=>{
 }
 
 /*CRIANDO TEMPLATES */
+
 const containerpai =document.getElementById('templates')
 function CriarTemplate(n){
     for(c = 1;c<=n;c++){
@@ -54,6 +55,28 @@ function CriarTemplate(n){
     }
 }
 CriarTemplate(6)
+
+const templates =[... document.getElementsByClassName("product")]
+
+const secao1 = templates.map((e,i,a)=>{
+    return e.firstElementChild
+})
+
+const secao2 = templates.map((e,i,a)=>{
+    return e.firstElementChild.nextElementSibling
+})
+const secao3 = templates.map((e,i,a)=>{
+    return e.firstElementChild.nextElementSibling.nextElementSibling
+})
+
+function modificar01(el,link){
+        console.log(secao1[el].firstElementChild.src=link)
+    
+}
+modificar01(0,'www')
+
+// Modificando templates
+
 
 /*Modificar 1 */
 
