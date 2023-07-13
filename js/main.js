@@ -57,6 +57,7 @@ function CriarTemplate(n){
 }
 CriarTemplate(6)
 
+// Editando templates
 const templates =[... document.getElementsByClassName("product")]
 
 const secao1 = templates.map((e,i,a)=>{
@@ -87,19 +88,13 @@ function modificarsecao03(el,link){
 
 }
 
-// Modificando templates
-
-
 /*Modificar template 1 */
-
 modificarsecao0(0,'./img/ProjetoIMC.png')
 modificarsecao01(0,' Projeto IMC')
 modificarsecao02(0,'Projeto indice de massa corporal. Tabela de indices, animações, adptação a  diversos tipos de tela.')
 modificarsecao03(0,'https://brunnofardindesouza.github.io/ProjetoImc/')
-
 /*Modificar template 2 */
 modificarsecao0(1,'./img/ProjetoLogin.png')
 modificarsecao01(1,'Projeto Login')
 modificarsecao02(1,'Projeto tela de login. Adpatavel a diversos tipos de telas, requerimentos de campos e animações.')
 modificarsecao03(1,'https://brunnofardindesouza.github.io/ProjetoLogin/')
-

@@ -127,9 +127,9 @@ section#templates{
 section#templates > div.product{
     height:440px;
     margin-top: 20px;
-    overflow: hidden;
     min-width: 290px;
     max-width:300px ;
+    overflow: hidden;
     margin-left: 20px;
     border-radius: 10px;
     display:inline-block;
