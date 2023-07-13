@@ -2,16 +2,16 @@
 
 @media screen and (min-width:637px){
     :root{
-        --cor1:#2563eb;
-        --cor2:#598EF3;
-        --cor3:#334155;
-        --cor4:#1e293b;
-        --cor5:#94a3b8;
+        --cor1:#2d2d2d;
+        --cor2:#1E1E1E;
+        --cor3:#454545;
+        --cor4:#0085ff;
+        --cor5:#006fff;
+
     
     }
     header{
         font-size: 1.3em;
-        border-bottom: 4px solid white;
     }
     header > nav{
         display: flex;
@@ -37,8 +37,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: red;
-        border-bottom: 4px solid white;
+        border-top: 1px;
+        background-color: var(--cor2);
     }
     nav#menupc section#menupcS1{
         width: 79%;
@@ -97,20 +97,19 @@
         max-width:1000px;
         display:block;
         text-align: center;
-        border-radius: 10px;
-        border: 2px solid black;
-        background-color: pink;
-     
-       
-        
+        border-radius: 10px;   
     }
     section#templates > div.product{
+        height: 500px;
         overflow: hidden;
         display: inline-block;
-        border: 2px solid white;
+        border: 2px solid black;
     }
     section#templates > div.product:hover{
-        transform: scale(1.07);
+        transform: scale(1.1);
+    }
+    section#templates >div.product > section.seção3 > p:hover{
+        background-color: #e40101;
     }
     
     

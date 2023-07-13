@@ -55,7 +55,7 @@ function CriarTemplate(n){
 
     }
 }
-CriarTemplate(6)
+CriarTemplate(3)
 
 // Editando templates
 const templates =[... document.getElementsByClassName("product")]
@@ -89,12 +89,19 @@ function modificarsecao03(el,link){
 }
 
 /*Modificar template 1 */
-modificarsecao0(0,'./img/ProjetoIMC.png')
+modificarsecao0(0,'../img/ProjetoIMC.png')
 modificarsecao01(0,' Projeto IMC')
 modificarsecao02(0,'Projeto indice de massa corporal. Tabela de indices, animações, adptação a  diversos tipos de tela.')
 modificarsecao03(0,'https://brunnofardindesouza.github.io/ProjetoImc/')
 /*Modificar template 2 */
-modificarsecao0(1,'./img/ProjetoLogin.png')
+modificarsecao0(1,'../img/ProjetoLogin.png')
 modificarsecao01(1,'Projeto Login')
 modificarsecao02(1,'Projeto tela de login. Adpatavel a diversos tipos de telas, requerimentos de campos e animações.')
 modificarsecao03(1,'https://brunnofardindesouza.github.io/ProjetoLogin/')
+
+/*Modificar template 3 */
+
+modificarsecao0(2,'../img/ProjetoResponsivo.png')
+modificarsecao01(2,'Projeto Responsivo')
+modificarsecao02(2,'Projeto 100% responsivo adpata para mobile,pc,talbets e todos os tipos de device points.')
+modificarsecao03(2,'https://brunnofardindesouza.github.io/Responsivao/')

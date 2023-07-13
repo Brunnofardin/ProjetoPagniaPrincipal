@@ -5,11 +5,12 @@
     padding: 0px;
 }
 :root{
-    --cor1:#2563eb;
-    --cor2:#598EF3;
-    --cor3:#334155;
-    --cor4:#1e293b;
-    --cor5:#94a3b8;
+    --cor1:#2d2d2d;
+    --cor2:#1E1E1E;
+    --cor3:#454545;
+    --cor4:#0085ff;
+    --cor5:#006fff;
+
 
 }
 a{
@@ -19,7 +20,7 @@ a{
 body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    height: 100vh;
 
 }
 header{
@@ -28,8 +29,13 @@ header{
     height: 60px;
     color: white;
     padding: 10px;
-    background:black;
+    background:linear-gradient(to top ,var(--cor2),var(--cor3),var(--cor1));
     
+}
+.fixar{
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 header #burguer{
     cursor: pointer;
@@ -115,9 +121,11 @@ main{
     background-color: white;
 }
 section#templates{
+    padding: 10px;
     width: 90%;
     display: flex;
     cursor: pointer;
+    margin: auto;
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
@@ -125,10 +133,9 @@ section#templates{
     
 }
 section#templates > div.product{
-    height:440px;
     margin-top: 20px;
-    min-width: 290px;
-    max-width:300px ;
+    max-width:290px;
+    height:400px;
     overflow: hidden;
     margin-left: 20px;
     border-radius: 10px;
@@ -186,6 +193,9 @@ section#templates >div.product > section.seção3 > p{
     width: 100%;
     text-align: center;
     background-color: red;
+}
+section#templates >div.product > section.seção3 > p:active{
+    background-color: #c01919;
 }
 section#templates >div.product > section.seção3 > p > a{
     text-decoration: none;
