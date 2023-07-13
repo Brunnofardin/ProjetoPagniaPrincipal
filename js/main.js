@@ -35,10 +35,11 @@ function CriarTemplate(n){
         secao01.appendChild(img)
         const secao02 = document.createElement('section')
         secao02.setAttribute('class','seção2')
-        const h1 = document.createElement('h1') 
+        const h1 = document.createElement('h1')
+        const p1 = document.createElement("p")
         const p = document.createElement('p')
         secao02.appendChild(h1)
-        secao02.appendChild(p)
+        secao02.appendChild(p1)
         const secao03 = document.createElement('section')
         secao03.setAttribute('class','seção3')
         const a = document.createElement('a')
@@ -69,12 +70,16 @@ const secao3 = templates.map((e,i,a)=>{
     return e.firstElementChild.nextElementSibling.nextElementSibling
 })
 
-function modificarsecao01(el,img){
+function modificarsecao0(el,img){
         secao1[el].firstElementChild.src=img
     
 }
-function modificarsecao02(el,texto){
+function modificarsecao01(el,texto){
    secao2[el].firstElementChild.innerHTML=texto
+
+}
+function modificarsecao02(el,texto){
+    secao2[el].lastElementChild.innerHTML=texto
 
 }
 function modificarsecao03(el,link){
@@ -85,14 +90,16 @@ function modificarsecao03(el,link){
 // Modificando templates
 
 
-/*Modificar 1 */
-modificarsecao01(0,'https://i6g8k8z4.stackpathcdn.com/wp-content/uploads/2021/07/turistas-em-buenos-aires.jpg')
-modificarsecao02(0,' Buenos Aires')
-modificarsecao03(0,'https://www.youtube.com/watch?v=Zs238FXKuTw')
+/*Modificar template 1 */
 
+modificarsecao0(0,'./img/ProjetoIMC.png')
+modificarsecao01(0,' Projeto IMC')
+modificarsecao02(0,'Projeto indice de massa corporal. Tabela de indices, animações, adptação a  diversos tipos de tela.')
+modificarsecao03(0,'https://brunnofardindesouza.github.io/ProjetoImc/')
 
-/*Modificar 2 */
+/*Modificar template 2 */
+modificarsecao0(1,'./img/ProjetoLogin.png')
+modificarsecao01(1,'Projeto Login')
+modificarsecao02(1,'Projeto tela de login. Adpatavel a diversos tipos de telas, requerimentos de campos e animações.')
+modificarsecao03(1,'https://brunnofardindesouza.github.io/ProjetoLogin/')
 
-modificarsecao01(1,'https://s2-autoesporte.glbimg.com/7fbDefzwFWKIJSXO2J_ye_Xevlo=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/K/g/DhmSqxSuWzLeT3svOAzQ/2019-07-12-supraantig.jpg')
-modificarsecao02(1,'Supra')
-modificarsecao03(1,'https://www.youtube.com/watch?v=GQFIV3u-dTU')

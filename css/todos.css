@@ -12,6 +12,10 @@
     --cor5:#94a3b8;
 
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +61,6 @@ nav#menupc{
     justify-content: space-between;
 }
 #menuFlutuante section{
-    border: 1px solid white;
     height: auto;
     
 }
@@ -93,6 +96,11 @@ section.voltar{
     display: block;
     text-align: right;
 }
+#btn-voltar{
+    padding: 10px;
+    margin-right: 20px;
+  
+}
 span.btni_voltar{
     padding: 20px;
     color: white;
@@ -112,19 +120,22 @@ section#templates{
     cursor: pointer;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
+
     
 }
 section#templates > div.product{
-    display:inline-block;
     height:330px;
+    margin-top: 20px;
+    overflow: hidden;
     min-width: 290px;
-    max-width: 330px;
+    max-width:300px ;
     margin-left: 20px;
     border-radius: 10px;
-    background-color: blue;
-    overflow: hidden;
+    display:inline-block;
+    border: 2px solid black;
     transition: transform 1s;
-    margin-top: 20px;
+    background-color: blue;
 }
 section#templates > div.product > section{
     width: 100%;
@@ -151,7 +162,14 @@ section#templates >div.product > section.seção2{
     text-indent: 28px;
     text-align: justify;
     color: white;
+    padding: 3px;
 
+}
+section#templates >div.product > section.seção2 > p{
+    line-height: 27px;
+    max-width: 90%;
+    padding: 2px;
+    margin-top: 3px;
 }
 section#templates >div.product > section.seção3{
     height: 17%;
