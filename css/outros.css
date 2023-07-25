@@ -94,7 +94,7 @@
     section#templates{
         margin: auto;
         padding: 10px;
-        max-width:1000px;
+        max-width:99%;
         display:block;
         text-align: center;
         border-radius: 10px;   
@@ -106,7 +106,7 @@
         border: 2px solid black;
     }
     section#templates > div.product:hover{
-        transform: scale(1.1);
+        transform: translate(-0px,-10px);
     }
     section#templates >div.product > section.seção3 > p:hover{
         background-color: #e40101;

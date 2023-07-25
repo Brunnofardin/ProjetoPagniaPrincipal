@@ -55,7 +55,7 @@ function CriarTemplate(n){
 
     }
 }
-CriarTemplate(3)
+CriarTemplate(4)
 
 // Editando templates
 const templates =[... document.getElementsByClassName("product")]
@@ -98,10 +98,13 @@ modificarsecao0(1,'../img/ProjetoLogin.png')
 modificarsecao01(1,'Projeto Login')
 modificarsecao02(1,'Projeto tela de login. Adpatavel a diversos tipos de telas, requerimentos de campos e animações.')
 modificarsecao03(1,'https://brunnofardindesouza.github.io/ProjetoLogin/')
-
 /*Modificar template 3 */
-
 modificarsecao0(2,'../img/ProjetoResponsivo.png')
 modificarsecao01(2,'Projeto Responsivo')
 modificarsecao02(2,'Projeto 100% responsivo adpata para mobile,pc,talbets e todos os tipos de device points.')
 modificarsecao03(2,'https://brunnofardindesouza.github.io/Responsivao/')
+/*Modificar template 4*/
+modificarsecao0(3,'../img/ProjetoCalculator.png')
+modificarsecao01(3,'Projeto Calculadora')
+modificarsecao02(3,'Projeto responsivo, realiza calculos matemáticos ultilizando os operadores d esoma,subtração,adição e multiplicação')
+modificarsecao03(3,'https://brunnofardindesouza.github.io/Calculadora/')
