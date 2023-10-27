@@ -1,0 +1,12 @@
+@media screen and (min-width:480px){
+
+    div.logo{
+        border: 1px solid white;
+    }
+    main section{
+        transition: 1s;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 390px;
+    }
+}
